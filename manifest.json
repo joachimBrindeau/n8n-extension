@@ -1,0 +1,14 @@
+{
+  "manifest_version": 2,
+  "name": "N8N Workflows",
+  "description": "Display a list of N8N workflows",
+  "version": "1.0",
+  "options_page": "options.html",
+  "browser_action": {
+    "default_popup": "first-run.html"
+  },
+  "permissions": [
+    "https://n8n.gravitasdocs.com/",
+    "storage"
+  ]
+}
