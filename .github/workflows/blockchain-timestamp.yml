@@ -1,0 +1,17 @@
+     
+name: Timestamp code with MY PROOF
+
+on:
+  push:
+    branches:
+      - main
+jobs:
+  timestamp:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+    - name: Timestamp code with MY PROOF
+      run: |
+        zip -r code.zip .
+        curl -F file=@code.zip "https://api.my-proof.com/code_imports?token=${{ secrets.MY_PROOF_TOKEN }}"
