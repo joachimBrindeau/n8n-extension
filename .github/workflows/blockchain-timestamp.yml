@@ -4,7 +4,7 @@ name: Timestamp code with MY PROOF
 on:
   push:
     branches:
-      - main
+      - master
 jobs:
   timestamp:
     runs-on: ubuntu-latest
